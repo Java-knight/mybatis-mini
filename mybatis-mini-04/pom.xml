@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.knight</groupId>
-    <artifactId>mybatis-mini-03</artifactId>
+    <artifactId>mybatis-mini-04</artifactId>
     <version>1.0-SNAPSHOT</version>
 
 
@@ -97,7 +97,7 @@
 
     <!--maven 构建插件-->
     <build>
-        <finalName>mybatis-mini-03</finalName>
+        <finalName>mybatis-mini-04</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>

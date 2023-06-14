@@ -91,7 +91,7 @@
 
     <!--maven 构建插件-->
     <build>
-        <finalName>mybatis-mini-01</finalName>
+        <finalName>mybatis-mini-02</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
