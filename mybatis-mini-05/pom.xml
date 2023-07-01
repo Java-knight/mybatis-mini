@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.knight</groupId>
-    <artifactId>mybatis-mini-03</artifactId>
+    <artifactId>mybatis-mini-05</artifactId>
     <version>1.0-SNAPSHOT</version>
 
 
@@ -86,11 +86,24 @@
             <version>5.5.0</version>
         </dependency>
 
+        <!-- mysql驱动 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.48</version>
+        </dependency>
+        <!-- druid连接池 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.2.9</version>
+        </dependency>
+
     </dependencies>
 
     <!--maven 构建插件-->
     <build>
-        <finalName>mybatis-mini-03</finalName>
+        <finalName>mybatis-mini-05</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>

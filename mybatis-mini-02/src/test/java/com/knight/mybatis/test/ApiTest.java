@@ -4,6 +4,8 @@ import com.knight.mybatis.binding.MapperProxyFactory;
 import com.knight.mybatis.test.dao.IUserDao;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.lang.reflect.Proxy;
 import java.util.HashMap;
@@ -13,9 +15,8 @@ import java.util.Map;
  * @desc
  * @date 2023/5/27
  */
-@Slf4j
 public class ApiTest {
-
+    private Logger logger = LoggerFactory.getLogger(ApiTest.class);
 
     @Test
     public void test_MapperProxyFactory() {
@@ -28,7 +29,7 @@ public class ApiTest {
                 "模拟执行Mapper.xml 中 SQL 语句的操作: 查询用户年龄");
         IUserDao userDao = factory.newInstance(sqlSession);
         String res = userDao.findUserName("knight");
-        log.info("test result: " + res);
+        logger.info("test result: " + res);
     }
 
     @Test
