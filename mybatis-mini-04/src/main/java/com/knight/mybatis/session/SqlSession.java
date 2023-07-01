@@ -27,6 +27,11 @@ public interface SqlSession {
     <T> T selectOne(String statement, Object parameter);
 
     /**
+     * 获取当前配置
+     * @return
+     */
+    Configuration getConfiguration();
+    /**
      * 获取应摄取, 这里使用了泛型, 使得类型安全
      * @param <T>
      * @param type

@@ -1,6 +1,7 @@
 package com.knight.mybatis.binding;
 
 import cn.hutool.core.lang.ClassScanner;
+import com.knight.mybatis.session.Configuration;
 import com.knight.mybatis.session.SqlSession;
 
 import java.util.HashMap;
@@ -16,10 +17,19 @@ import java.util.Set;
 public class MapperRegistry {
 
     /**
+     * 配置项
+     */
+    private Configuration config;
+
+    /**
      * 将已添加的映射器[mapper]代理加入到 HashMap 缓存中
      * <type, MapperProxyFactory>
      */
     private final Map<Class<?>, MapperProxyFactory<?>> knownMappers = new HashMap<>();
+
+    public MapperRegistry(Configuration config) {
+        this.config = config;
+    }
 
     /**
      * 根据类型从 Map 注册表中获取 映射器mapper
@@ -57,7 +67,7 @@ public class MapperRegistry {
         }
     }
 
-    private <T> boolean hasMapper(Class<T> type) {
+    public <T> boolean hasMapper(Class<T> type) {
         return knownMappers.containsKey(type);
     }
 

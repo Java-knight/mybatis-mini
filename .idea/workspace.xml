@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71fcfaf5-eaf0-4229-8254-8ca1928ce4d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/mybatis-mini-02/pom.xml" afterDir="false" />
+    <list default="true" id="71fcfaf5-eaf0-4229-8254-8ca1928ce4d2" name="Changes" comment="mybatis-04 1">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-mini-03/src/main/java/com/knight/mybatis/binding/MapperRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-mini-03/src/main/java/com/knight/mybatis/binding/MapperRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-mini-04/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-mini-04/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-mini-04/src/main/java/com/knight/mybatis/binding/MapperProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-mini-04/src/main/java/com/knight/mybatis/binding/MapperProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-mini-04/src/main/java/com/knight/mybatis/binding/MapperProxyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-mini-04/src/main/java/com/knight/mybatis/binding/MapperProxyFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-mini-04/src/main/java/com/knight/mybatis/binding/MapperRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-mini-04/src/main/java/com/knight/mybatis/binding/MapperRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-mini-04/src/main/java/com/knight/mybatis/session/SqlSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-mini-04/src/main/java/com/knight/mybatis/session/SqlSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-mini-04/src/main/java/com/knight/mybatis/session/defaults/DefaultSqlSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-mini-04/src/main/java/com/knight/mybatis/session/defaults/DefaultSqlSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-mini-04/src/main/java/com/knight/mybatis/session/defaults/DefaultSqlSessionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-mini-04/src/main/java/com/knight/mybatis/session/defaults/DefaultSqlSessionFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +32,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar!/org/dom4j/Document.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar!/org/dom4j/Element.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -43,7 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "E:/work/tempCode/book-small-mybatis",
+    "last_opened_file_path": "E:/work/javaWork/mybatis-mini/mybatis-mini-04/src/test/java/com/knight/mybatis",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,11 +63,52 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.editor",
-    "spring.configuration.checksum": "ec7ca0eb0a3ef686a877bc46095e8822"
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "spring.configuration.checksum": "fa1a33bc9ec7dc8e93b50e630164c48e"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ApiTest.test_proxy_class">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work\javaWork\mybatis-mini\mybatis-mini-04\src\test\java\com\knight\mybatis" />
+      <recent name="E:\work\javaWork\mybatis-mini\mybatis-mini-04\src\main\java\com\knight" />
+      <recent name="E:\work\javaWork\mybatis-mini\mybatis-mini-03\src\test\java\com\knight\mybatis\test" />
+      <recent name="E:\work\javaWork\mybatis-mini\mybatis-mini-03\src\test\java\com\knight\mybatis" />
+      <recent name="E:\work\javaWork\mybatis-mini\mybatis-mini-03" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ApiTest.test_MapperProxyFactory (2)">
+    <configuration name="ApiTest.test_MapperProxyFactory (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-mini-03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.knight.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.knight.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.knight.mybatis.test.ApiTest" />
+      <option name="METHOD_NAME" value="test_MapperProxyFactory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.test_MapperProxyFactory (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-mini-04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.knight.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.knight.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.knight.mybatis.test.ApiTest" />
+      <option name="METHOD_NAME" value="test_MapperProxyFactory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiTest.test_MapperProxyFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-mini-02" />
       <extension name="coverage">
@@ -91,6 +143,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTest.test_MapperProxyFactory (2)" />
+        <item itemvalue="JUnit.ApiTest.test_MapperProxyFactory (1)" />
         <item itemvalue="JUnit.ApiTest.test_proxy_class" />
         <item itemvalue="JUnit.ApiTest.test_MapperProxyFactory" />
       </list>
@@ -106,8 +160,39 @@
       <updated>1679068587088</updated>
       <workItem from="1679068588340" duration="216000" />
       <workItem from="1681563171298" duration="7900000" />
-      <workItem from="1685170985106" duration="2599000" />
+      <workItem from="1685170985106" duration="5512000" />
+      <workItem from="1685176510420" duration="709000" />
+      <workItem from="1685197540301" duration="1439000" />
+      <workItem from="1685775022256" duration="1808000" />
+      <workItem from="1685892224579" duration="607000" />
+      <workItem from="1686759024466" duration="2033000" />
+      <workItem from="1686761065617" duration="2636000" />
+      <workItem from="1686795528929" duration="220000" />
+      <workItem from="1687619826374" duration="2681000" />
+      <workItem from="1688204807244" duration="2670000" />
     </task>
+    <task id="LOCAL-00001" summary="mybatis-02">
+      <created>1685173815833</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685173815833</updated>
+    </task>
+    <task id="LOCAL-00002" summary="mybatis-03">
+      <created>1686760696166</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686760696166</updated>
+    </task>
+    <task id="LOCAL-00003" summary="mybatis-04 1">
+      <created>1686761160727</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686761160727</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,5 +208,27 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="mybatis-02" />
+    <MESSAGE value="mybatis-03" />
+    <MESSAGE value="mybatis-04 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="mybatis-04 1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis-mini-04/src/main/java/com/knight/mybatis/binding/MapperMethod.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.knight.mybatis.session.Configuration" memberName="mappedStatements" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

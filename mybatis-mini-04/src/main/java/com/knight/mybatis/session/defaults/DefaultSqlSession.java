@@ -1,6 +1,8 @@
 package com.knight.mybatis.session.defaults;
 
 import com.knight.mybatis.binding.MapperRegistry;
+import com.knight.mybatis.mapping.MappedStatement;
+import com.knight.mybatis.session.Configuration;
 import com.knight.mybatis.session.SqlSession;
 
 /**
@@ -13,10 +15,10 @@ public class DefaultSqlSession implements SqlSession {
     /**
      * 映射注册机
      */
-    private MapperRegistry mapperRegistry;
+    private Configuration configuration;
 
-    public DefaultSqlSession(MapperRegistry mapperRegistry) {
-        this.mapperRegistry = mapperRegistry;
+    public DefaultSqlSession(Configuration config) {
+        this.configuration = config;
     }
 
     @Override
@@ -26,11 +28,17 @@ public class DefaultSqlSession implements SqlSession {
 
     @Override
     public <T> T selectOne(String statement, Object parameter) {
-        return (T) ("your operation is proxy! statement: " + statement + ", param: " + parameter);
+        MappedStatement mappedStatement = configuration.getMappedStatement(statement);
+        return (T) ("your operation is proxy! " + "\nstatement:" + statement + "\nparam: " + parameter + "\nexecute sql: " + mappedStatement.getSql());
+    }
+
+    @Override
+    public Configuration getConfiguration() {
+        return configuration;
     }
 
     @Override
     public <T> T getMapper(Class<T> type) {
-        return mapperRegistry.getMapper(type, this);
+        return configuration.getMapper(type, this);
     }
 }
