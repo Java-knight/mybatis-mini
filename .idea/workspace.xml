@@ -75,7 +75,7 @@
       <recent name="E:\work\javaWork\mybatis-mini\mybatis-mini-03\src\test\java\com\knight\mybatis" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTest.test_MapperProxyFactory (2)">
+  <component name="RunManager" selected="JUnit.ApiTest.test_MapperProxyFactory">
     <configuration name="ApiTest.test_MapperProxyFactory (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-mini-03" />
       <extension name="coverage">
@@ -142,10 +142,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTest.test_MapperProxyFactory" />
         <item itemvalue="JUnit.ApiTest.test_MapperProxyFactory (2)" />
         <item itemvalue="JUnit.ApiTest.test_MapperProxyFactory (1)" />
         <item itemvalue="JUnit.ApiTest.test_proxy_class" />
-        <item itemvalue="JUnit.ApiTest.test_MapperProxyFactory" />
       </list>
     </recent_temporary>
   </component>

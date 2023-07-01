@@ -2,7 +2,6 @@ package com.knight.mybatis.test;
 
 import com.knight.mybatis.binding.MapperProxyFactory;
 import com.knight.mybatis.test.dao.IUserDao;
-import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
