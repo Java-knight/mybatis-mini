@@ -12,78 +12,20 @@ import java.util.Map;
  */
 public class MappedStatement {
 
+    // 配置项
     private Configuration configuration;
 
+    // mapped id
     private String id;
 
+    // sql 语句类型
     private SqlCommandType sqlCommandType;
 
-    private String parameterType;
-
-    private String resultType;
-
-    private String sql;
-
-    private Map<Integer, String> parameter;
+    // 参数类型
+    private BoundSql boundSql;
 
     private MappedStatement() {
         // constructor disable
-    }
-
-    public Configuration getConfiguration() {
-        return configuration;
-    }
-
-    public void setConfiguration(Configuration configuration) {
-        this.configuration = configuration;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public SqlCommandType getSqlCommandType() {
-        return sqlCommandType;
-    }
-
-    public void setSqlCommandType(SqlCommandType sqlCommandType) {
-        this.sqlCommandType = sqlCommandType;
-    }
-
-    public String getParameterType() {
-        return parameterType;
-    }
-
-    public void setParameterType(String parameterType) {
-        this.parameterType = parameterType;
-    }
-
-    public String getResultType() {
-        return resultType;
-    }
-
-    public void setResultType(String resultType) {
-        this.resultType = resultType;
-    }
-
-    public String getSql() {
-        return sql;
-    }
-
-    public void setSql(String sql) {
-        this.sql = sql;
-    }
-
-    public Map<Integer, String> getParameter() {
-        return parameter;
-    }
-
-    public void setParameter(Map<Integer, String> parameter) {
-        this.parameter = parameter;
     }
 
     /**
@@ -92,14 +34,11 @@ public class MappedStatement {
     public static class Builder {
         private MappedStatement mappedStatement = new MappedStatement();
 
-        public Builder(Configuration config, String id, SqlCommandType sqlCommandType, String parameterType, String resultType, String sql, Map<Integer, String> parameter) {
+        public Builder(Configuration config, String id, SqlCommandType sqlCommandType, BoundSql boundSql) {
             mappedStatement.configuration = config;
             mappedStatement.id = id;
             mappedStatement.sqlCommandType = sqlCommandType;
-            mappedStatement.parameterType = parameterType;
-            mappedStatement.resultType = resultType;
-            mappedStatement.sql = sql;
-            mappedStatement.parameter = parameter;
+            mappedStatement.boundSql = boundSql;
         }
 
 
@@ -108,5 +47,22 @@ public class MappedStatement {
             assert mappedStatement.id != null;
             return mappedStatement;
         }
+    }
+
+    public Configuration getConfiguration() {
+        return configuration;
+    }
+
+
+    public String getId() {
+        return id;
+    }
+
+    public SqlCommandType getSqlCommandType() {
+        return sqlCommandType;
+    }
+
+    public BoundSql getBoundSql() {
+        return boundSql;
     }
 }
